@@ -6,6 +6,7 @@
     <meta name="description" content="Hospitale et clinique website health-care nice">
     <meta name="keywords" content="Medicare+, Votre santé, notre priorité, health-care,santé, health">
     <title>Medicare+</title>
+    <link rel="shortcut icon" href="../images/Medicare+.webp" type="image/x-icon">
     <!--cdn tailwindcss-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome sdn-->
@@ -23,13 +24,10 @@
             <button onclick="OpenNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
             <i class="fa-solid fa-bars text-2xl text-green-800"></i>
             </button>
-            <div class="search p-2 md:hidden text-center absolute top-2 right-14 transition-transform duration-300 hover:scale-110">
-                <input type="search" id="search-navbar-mobile" class="p-2 ps-3 w-55 text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
-            </div>
         </div>
-        <ul class="hidden md:flex md:flex-row items-center justify-center gap-1 text-lg w-full">
-            <a href="../index.html">
-                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Home</li>
+        <ul class="hidden md:flex md:flex-row items-center justify-evenly text-lg w-full">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">
+            <a href="../index.html">Accueil</a></li>
             </a>
             <a href="../pages/medecine.html">
                 <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Médecine</li>
@@ -40,9 +38,6 @@
             <a href="../pages/suivi-sante.html">
                 <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Suivi-Santé</li>
             </a>
-            <div class="search md:p-3 md:ps-10 md:w-60 p-2 ps-3 transition-transform duration-300 hover:scale-110">
-                <input type="search" id="search-navbar-laptop" class="p-2 ps-3 w-full text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
-            </div>
         </ul>
         
 
@@ -52,7 +47,7 @@
             </button>
             <ul class="flex flex-col">
                 <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
-                <a href="/index.html">Home
+                <a href="/index.html">Accueil
                 </a></li>
                 <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
                 <a href="../pages/medecine.html">Médecine
@@ -66,11 +61,10 @@
             </ul>
         </div>
     </nav>
-       <div class="flex flex-wrap justify-evenly bg-blue-300 items-center w-full h">
+    <div class="flex flex-wrap justify-evenly bg-blue-300 items-center w-full h">
         <button id="night-night" class="p-2 text-2xl text-yellow-400 hover:scale-110 transition">
             <i id="theme-icon" class="fa-solid fa-sun"></i>
         </button>
-
     </div>
         <main class="bg-center bg-no-repeat bg-[url('../images/Rendez-vous.png')] bg-cover bg-blue-950/55 bg-blend-multiply flex flex-col items-center justify-evenly p-2">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">🗓️ Avant le rendez-vous</h1>

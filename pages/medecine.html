@@ -6,6 +6,7 @@
     <meta name="description" content="Hospitale et clinique website health-care nice">
     <meta name="keywords" content="Medicare+, Votre santé, notre priorité, health-care,santé, health">
     <title>Medicare+</title>
+    <link rel="shortcut icon" href="../images/Medicare+.webp" type="image/x-icon">
     <!--cdn tailwindcss-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome sdn-->
@@ -15,7 +16,7 @@
 
 </head>
 <body>
-     <nav class="bg-blue-400/50 relative w-full md:flex justify-between items-center ">
+     <nav class="bg-blue-400/50 relative w-full md:flex justify-between items-center">
         <div class="flex w-80 lg:w-full">
             <img src="../images/Medicare+.webp" class="logo w-20 h-16 md:w-40 md:h-20 p-1 transition-transform duration-300 hover:scale-110" alt="logo">
         </div>
@@ -24,19 +25,15 @@
                 <i class="fa-solid fa-bars text-2xl text-green-800"></i>
                 </button>
             </div>
-            <ul class="hidden md:flex md:flex-row items-center justify-center gap-1 text-lg w-full">
-                <a href="../index.html">
-                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Home</li>
-                </a>
-                <a href="../pages/medecine.html">
-                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Médecine</li>
-                </a>
-                <a href="../pages/rendez-vous.html">
-                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Rendez-vous</li>
-                </a>
-                <a href="../pages/suivi-sante.html">
-                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Suivi-Santé</li>
-                </a>
+            <ul class="hidden md:flex md:flex-row items-center justify-evenly text-lg w-full">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">
+                <a href="../index.html">Accueil</a></li>
+                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">
+                <a href="../pages/medecine.html">Médecine</a></li>
+                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">
+                <a href="../pages/rendez-vous.html">Rendez-vous</a></li>
+                    <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">
+                <a href="suivi-sante.html">Suivi-Santé</a></li>
             </ul>
             
 
@@ -46,7 +43,7 @@
                 </button>
                 <ul class="flex flex-col">
                     <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
-                    <a href="/index.html">Home
+                    <a href="../index.html">Accueil
                     </a></li>
                     <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
                     <a href="../pages/medecine.html">Médecine
@@ -62,7 +59,7 @@
         </nav>
     <div class="flex flex-wrap justify-evenly bg-blue-300/10 items-center w-full h">
         <div class="search p-2 w-40 text-center transition-transform duration-300 hover:scale-110">
-            <select name="medecin" id="medecin" class="block py-2.5 px-0 w-full font-medium text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" choisi médecin:">
+            <select name="medecin" id="medecin" class="block py-2.5 px-0 w-full font-medium text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="Nos Médecins Spécialistes">
                 <option value="1" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Said Alilo</option>
                 <option value="2" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Amal Alami Younssi</option>
                 <option value="3" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr El Hassan Bizgarn</option>
@@ -75,69 +72,70 @@
 
     </div>
     
-    <main class="bg-blue-800/80 p-1 md:p-5 w-full flex flex-wrap gap-1.5 md:gap-4 items-center justify-evenly">
+    <main class="bg-blue-800/80 p-5 md:p-8 lg:p-10 w-full flex flex-wrap gap-2 md:gap-5 items-start justify-center">
                 
         <!-- cart 1 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/Dr-Amal.webp" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">Dr Amal Alami Younssi</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/Dr-Amal.webp" class="h-[200px] md:h-[350px] object-cover w-full" alt="Amal image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">Dr Amal Alami Younssi</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
                 Dentiste à Agadir <br>
                 La clinique dentaire Le Sourire se situe à Agadir ,dentaire complet avec une dentiste professionnelle qualifiée
             </p>
         </div> 
          <!-- cart 2 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/jems.jpg" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr El Hassan Bizgarn</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Cardiologie à Tata <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/jems.jpg" class="h-[200px] md:h-[350px]  object-cover w-full" alt="hassan image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">🩺 Dr El Hassan Bizgarn</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Cardiologue à Tata <br>
+                Spécialisée dans les maladies cardiaques et la santé cardiovasculaire avec plus de 12 ans d'expérience.
             </p>
         </div> 
          <!-- cart 3 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/sandokji.jpeg" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr Ibrahim Motawakil</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Dentiste à Kairo <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/sandokji.jpeg" class="h-[200px] md:h-[350px] object-cover w-full" alt="Nuerologue image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">🩺 Dr Ibrahim Jakan</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Neurologue à Kairo <br>
+                Expert en troubles du cerveau et du système nerveux, y compris AVC et épilepsie.
+                Centre Ophtalmologique Lille
             </p>
         </div> 
          <!-- cart 4 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/ibrahim.jpg" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr Amale Dressi</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Psecolog à Marakkech <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/ibrahim.jpg" class="h-[200px] md:h-[350px]  object-cover w-full" alt="Chirurgien image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">🩺 Dr Amale Dressi</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Chirurgien Orthopédique à Marakkech <br>
+                articulaires, blessures sportives et troubles musculosquelettiques.
             </p>
         </div> 
          <!-- cart 5 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/Alilo.png" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr Said Aililo</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Médecine à Agadir <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/Alilo.png" class="h-[250px] md:h-[350px]  object-cover w-full" alt="Alilo image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">🩺 Dr Said Aililo</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Pédiatre à Agadir <br>
+                Dédiée à la santé des enfants de la naissance à l'adolescence avec une approche de soins douce.
             </p>
         </div>  
          <!-- cart 6 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/gzar.jpg" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr Omar Sondar</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Laboratoire à Tanger <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/gzar.jpg" class="h-[250px] md:h-[350px]  object-cover w-full" alt="gzar image">
+            <h2 class="text-xl px-4 md:text-2xl font-bold mb-4">🩺 Dr Omar Sondar</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Ophtalmologue à Tanger <br>
+                Expert en soins oculaires, correction de la vision, chirurgie de la cataracte et maladies rétiniennes.
             </p>
         </div>  
          <!-- cart 7 -->
-        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out p-4 md:p-5 h-90 md:h-70 w-80 md:30 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
-            <img src="../images/riza.webp" class="h-[300px] md:h-[400px] object-cover w-full" alt="">
-            <h2 class="text-xl md:text-2xl font-bold mb-4">🩺 Dr Mohamed Barakat</h2>
-            <p class="text-lg md:text-xl mb-6 max-w-2xl">
-                Dentiste à Casablanca <br>
-                Chirurgie buccale, Dentiste, Endodontiste, Esthétique dentaire, Implantologiste , Stomatologue à Agadir
+        <div class="cart border-blue-700 bg-blue-400 duration-700 ease-in-out rounded-2xl lg:rounded-3xl hover:shadow-2xl shadow-xl shadow-blue-900 hover:shadow-blue-400 w-80 md:w-96 h-75 md:h-85 overflow-hidden flex flex-col gap-0.5 items-center justify-around">
+            <img src="../images/riza.webp" class="h-[320px] md:h-[350px]  object-cover w-full" alt="rizar image">
+            <h2 class="text-xl px-4! md:text-2xl font-bold mb-4">🩺 Dr Mohamed Barakat</h2>
+            <p class="text-lg md:text-xl mb-6 px-4 max-w-2xl">
+                Dermatologue à Casablanca <br>
+                Expert en affections cutanées, dermatologie esthétique et prévention du cancer de la peau.
             </p>
         </div> 
        
