@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+.owl-dots{
+    position: absolute;
+    bottom: 2%;
+    right: 40%;
+    display: flex;
+    gap: 1rem;
+}
+@media (max-width:780px){
+    
+}
+.owl-dots button.owl-dot{
+    width: 30px;
+    height: 10px;
+    z-index: 10;
+    background: #93f315;
+}
+.owl-dots button.owl-dot.active{
+    width: 30px;
+    height: 10px;
+    background: #f80101ee;
+}
+ /* Dark mode styles */
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        
+        .dark-mode .bg-blue-400\/50 {
+            background-color: rgba(30, 64, 175, 0.5);
+        }
+        
+        .dark-mode .bg-blue-300\/50 {
+            background-color: rgba(30, 64, 175, 0.3);
+        }
+        
+        .dark-mode .text-blue-900 {
+            color: #dbeafe;
+        }
+        
+        .dark-mode .hover\:bg-blue-200:hover {
+            background-color: rgba(30, 64, 175, 0.2);
+        }
+        
+        .dark-mode .hover\:text-blue-800:hover {
+            color: #bfdbfe;
+        }
+        
+        .dark-mode .bg-blue-600 {
+            background-color: #1e40af;
+        }
+        
+        .dark-mode .hover\:bg-blue-800:hover {
+            background-color: #1e3a8a;
+        }
+        
+        .dark-mode .bg-cyan-600 {
+            background-color: #0891b2;
+        }
+        
+        .dark-mode .hover\:bg-cyan-800:hover {
+            background-color: #155e75;
+        }
+        
+        .dark-mode .bg-blue-300\/60 {
+            background-color: rgba(30, 64, 175, 0.6);
+        }
+        
+        .dark-mode .hover\:bg-blue-500\/80:hover {
+            background-color: rgba(30, 64, 175, 0.8);
+        }
+        
+        .dark-mode input {
+            background-color: #2d3748;
+            color: #e2e8f0;
+            border-color: #4a5568;
+        }
+        
+        .dark-mode input::placeholder {
+            color: #a0aec0;
+        }
+        
+        .dark-mode .open {
+            background-color: rgba(30, 64, 175, 0.3);
+        }
+        
+        .dark-mode .hover\:bg-blue-300:hover {
+            background-color: rgba(30, 64, 175, 0.4);
+        }

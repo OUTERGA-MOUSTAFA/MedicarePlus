@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospitale et clinique website health-care nice">
+    <meta name="keywords" content="Medicare+, Votre santé, notre priorité, health-care,santé, health">
+    <title>Medicare+</title>
+    <!--cdn tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--css owl-carousel -->
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owl.theme.default.min.css">
+    <!-- font awsome sdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--jquery owl-carousel-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+     <nav class="bg-blue-400/50 relative w-full md:flex justify-between items-center ">
+        <div class="flex w-80 lg:w-full">
+            <img src="images/Medicare+.webp" class="logo w-20 h-16 md:w-40 md:h-20 p-1 transition-transform duration-300 hover:scale-110" alt="logo">
+        </div>
+
+        <div class="burger md:hidden">
+            <button onclick="OpenNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-bars text-2xl text-green-800"></i>
+            </button>
+        </div>
+        <ul class="hidden md:flex md:flex-row items-center justify-evenly text-lg w-full">
+            <a href="index.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Home</li>
+            </a>
+            <a href="pages/medecine.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Médecine</li>
+            </a>
+            <a href="pages/rendez-vous.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Rendez-vous</li>
+            </a>
+            <a href="pages/suivi-sante.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Suivi-Santé</li>
+            </a>
+           
+        </ul>
+        
+
+        <div class="open text-bold flex flex-col bg-blue-300/50 w-full hidden md:hidden">
+            <button onclick="CloseNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-xmark text-3xl text-red-600"></i>
+            </button>
+            <ul class="flex flex-col">
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="index.html">Accuiel
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="pages/medecine.html">Médecine
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="pages/rendez-vous.html">Rendez-vous
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="pages/suivi-sante.html">Suivi-Santé
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="relative w-full">
+        <div class="owl-carousel relative h-100 md:h-85 w-full overflow-hidden">
+                
+            <!-- Item 1 -->
+            <div class="item relative duration-700 ease-in-out h-100 w-full overflow-hidden">
+                <img src="images/side-view-nurses-working-together.webp" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🩺 Prenez soin de votre santé</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Une visite régulière chez le médecin permet de prévenir les maladies avant qu'elles ne surviennent.
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Lire plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item  relative duration-700 ease-in-out h-100 w-full overflow-hidden">
+                <img src="images/yahod.jpeg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">💧 Buvez de l’eau</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Boire 1,5 à 2 litres d’eau par jour est essentiel pour le bon fonctionnement du corps.
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item  relative duration-700 ease-in-out h-100 w-full overflow-hidden">
+                <img src="images/AST1272952-XL.jpg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🥗 Alimentation équilibrée</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Mange des fruits et légumes chaque jour <br>
+                        Privilégie les aliments frais et peu transformés <br>
+                        Limite le sucre, le sel et les graisses saturées
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="item  relative duration-700 ease-in-out h-100 w-full  overflow-hidden" >
+                <img src="images/lopital.jpg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🧠 Santé mentale</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                       Prends du temps pour toi <br>
+                    Parle à quelqu’un si tu te sens stressé(e) ou anxieux(se) <br>
+                    Fais des activités qui te détendent (musique, lecture, dessin…) <br>
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="item relative duration-700 ease-in-out  w-full overflow-hidden">
+                <img src="images/Medicare_share.jpg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🏃‍♂️ Activité physique</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Bouge au moins 30 minutes par jour <br>
+                        Fais une activité que tu aimes (marche, danse, vélo…) <br>
+                        Évite de rester assis trop longtemps
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="item relative duration-700 ease-in-out  w-full overflow-hidden">
+                <img src="images/nurses.jpeg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🏃‍♂️ Activité physique</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Bouge au moins 30 minutes par jour <br>
+                        Fais une activité que tu aimes (marche, danse, vélo…) <br>
+                        Évite de rester assis trop longtemps
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="item relative duration-700 ease-in-out  w-full overflow-hidden">
+                <img src="images/covid.jpg" class="h-[500px] md:h-[600px] object-cover w-full" alt="">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">🏃‍♂️ Activité physique</h2>
+                    <p class="text-lg md:text-xl mb-6 max-w-2xl">
+                        Bouge au moins 30 minutes par jour <br>
+                        Fais une activité que tu aimes (marche, danse, vélo…) <br>
+                        Évite de rester assis trop longtemps
+                    </p>
+                    <button class="bg-cyan-600 hover:bg-cyan-800 px-6 py-3 rounded-lg text-white font-semibold transition">
+                        Découvrir plus
+                    </button>
+                </div>
+            </div>
+        </div>  
+       <div class="btns absolute inset-0 flex items-center justify-between px-6 z-10">
+            <button class="btn1 bg-blue-300/60 hover:bg-blue-500/80 hover:text-blue-950 p-3 rounded-full transition">
+                <i class="fa-solid fa-chevron-left text-blue-950/55 text-2xl hover:text-3xl transition-all duration-500"></i>
+            </button>
+            <button class="btn2 bg-blue-300/60 hover:bg-blue-500/80 p-3 rounded-full transition">
+                <i class="fa-solid fa-chevron-right text-blue-950/55 hover:text-blue-950 text-2xl hover:text-3xl transition-all duration-500"></i>
+            </button>
+        </div>
+    </main>
+    <div class=" mx-auto px-4 py-8 bg-blue-300 ">
+        <h1 class="text-4xl font-bold text-center text-blue-800 mb-4">Articles de Santé</h1>
+        <p class="text-center text-gray-600 mb-16 text-xl">Des conseils médicaux fiables pour votre bien-être</p>
+        
+        <div class="flex flex-wrap gap-4 items-center justify-evenly">
+            <!-- Article 1 -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-3xl transition-all duration-300">
+                <div class="categorie bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Prévention
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">10 Signes Précoces de Problèmes Cardiaques</h3>
+                    <p class="text-gray-600 mb-4">Reconnaître les symptômes qui pourraient indiquer un trouble cardiaque nécessitant une consultation médicale.</p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span>Dr. Martin Dubois</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-3xl transition-all duration-300">
+                <div class="categorie bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Nutrition
+                </div>
+                <div class="p-6">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Les Superaliments pour Renforcer votre Système Immunitaire</h3>
+                    <p class="text-gray-600 mb-4">Découvrez les aliments riches en nutriments qui boostent vos défenses naturelles contre les infections.</p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span>Dr. Sophie Laurent</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-3xl transition-all duration-300">
+                <div class="categorie bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    Santé Mentale
+                </div>
+                <div class="p-6">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Gestion du Stress : Techniques Efficaces au Quotidien</h3>
+                    <p class="text-gray-600 mb-4">Apprenez des méthodes simples et scientifiquement prouvées pour réduire votre niveau de stress.</p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span>Dr. Pierre Moreau</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <footer class="bg-blue-950/80 shadow-sm w-full">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-blue-200 sm:text-center">© 2023 <a href="https://github.com/OUTERGA-MOUSTAFA" class="hover:underline">Medicare+</a>. touts les drois recervé.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-blue-500 sm:mt-0">
+            <li>
+                <a href="../index.html" class="hover:underline me-4 md:me-6">Accueil</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Drois privé</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Liciences</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+    
+    <!-- js owl-carousel-->
+        <script src="assets/owl.carousel.min.js"></script>
+        <script src="assets/js.js"></script>
+</body>
+</html>

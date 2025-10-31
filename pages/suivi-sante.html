@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospitale et clinique website health-care nice">
+    <meta name="keywords" content="Medicare+, Votre santé, notre priorité, health-care,santé, health">
+    <title>Medicare+</title>
+    <!--cdn tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome sdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--my style-->
+    <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+    <nav class="bg-blue-400/50 relative w-full md:flex justify-between items-center ">
+         <div class="flex w-80 lg:w-full">
+            <img src="../images/Medicare+.webp" class="logo w-20 h-16 md:w-40 md:h-20 p-1 transition-transform duration-300 hover:scale-110" alt="logo">
+        </div>
+        <div class="burger md:hidden">
+            <button onclick="OpenNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-bars text-2xl text-green-800"></i>
+            </button>
+            <div class="search p-2 md:hidden text-center absolute top-2 right-14 transition-transform duration-300 hover:scale-110">
+                <input type="search" id="search-navbar-mobile" class="p-2 ps-3 w-55 text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
+            </div>
+        </div>
+        <ul class="hidden md:flex md:flex-row items-center justify-center gap-1 text-lg w-full">
+            <a href="/index.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Home</li>
+            </a>
+            <a href="../pages/medecine.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Médecine</li>
+            </a>
+            <a href="../pages/rendez-vous.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Rendez-vous</li>
+            </a>
+            <a href="suivi-sante.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Suivi-Santé</li>
+            </a>
+            <div class="search md:p-3 md:ps-10 md:w-60 p-2 ps-3 transition-transform duration-300 hover:scale-110">
+                <input type="search" id="search-navbar-laptop" class="p-2 ps-3 w-full text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
+            </div>
+        </ul>
+        
+
+        <div class="open text-bold flex flex-col bg-blue-300/50 w-full hidden md:hidden">
+            <button onclick="CloseNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-xmark text-3xl text-red-600"></i>
+            </button>
+            <ul class="flex flex-col">
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="/index.html">Home
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/medecine.html">Médecine
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/rendez-vous.html">Rendez-vous
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/suivi-sante.html">Suivi-Santé
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex flex-wrap justify-evenly bg-blue-300/10 items-center w-full h">
+        <div class="search p-2 w-40 text-center transition-transform duration-300 hover:scale-110">
+            <select name="medecin" id="medecin" class="block py-2.5 px-0 w-full font-medium text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" choisi médecin:">
+                <option value="1" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Said Alilo</option>
+                <option value="2" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Amal Alami Younssi</option>
+                <option value="3" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr El Hassan Bizgarn</option>
+                <option value="4" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Amale Dressi</option>
+            </select>
+        </div>
+        <button id="night-night" class="p-2 text-2xl text-yellow-400 hover:scale-110 transition">
+            <i id="theme-icon" class="fa-solid fa-sun"></i>
+        </button>
+
+    </div>
+    <main>
+
+    </main>
+
+    <footer class="bg-blue-950/80 shadow-sm w-full">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-blue-200 sm:text-center">© 2023 <a href="https://github.com/OUTERGA-MOUSTAFA" class="hover:underline">Medicare+</a>. touts les drois recervé.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-blue-500 sm:mt-0">
+            <li>
+                <a href="../index.html" class="hover:underline me-4 md:me-6">Accueil</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Drois privé</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Liciences</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+    <script src="../assets/js.js"></script>
+</body>
+</html>

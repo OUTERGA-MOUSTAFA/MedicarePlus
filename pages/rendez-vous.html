@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospitale et clinique website health-care nice">
+    <meta name="keywords" content="Medicare+, Votre santé, notre priorité, health-care,santé, health">
+    <title>Medicare+</title>
+    <!--cdn tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome sdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--my style-->
+    <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body>
+    <nav class="bg-blue-400/50 relative w-full md:flex justify-between items-center ">
+         <div class="flex w-80 lg:w-full">
+            <img src="../images/Medicare+.webp" class="logo w-20 h-16 md:w-40 md:h-20 p-1 transition-transform duration-300 hover:scale-110" alt="logo">
+        </div>
+        <div class="burger md:hidden">
+            <button onclick="OpenNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-bars text-2xl text-green-800"></i>
+            </button>
+            <div class="search p-2 md:hidden text-center absolute top-2 right-14 transition-transform duration-300 hover:scale-110">
+                <input type="search" id="search-navbar-mobile" class="p-2 ps-3 w-55 text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
+            </div>
+        </div>
+        <ul class="hidden md:flex md:flex-row items-center justify-center gap-1 text-lg w-full">
+            <a href="/index.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Home</li>
+            </a>
+            <a href="../pages/medecine.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Médecine</li>
+            </a>
+            <a href="../pages/rendez-vous.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Rendez-vous</li>
+            </a>
+            <a href="../pages/suivi-sante.html">
+                <li class="p-3 text-blue-900 hover:text-blue-800 hover:bg-blue-200 rounded-1xl transition-transform duration-300 hover:scale-110">Suivi-Santé</li>
+            </a>
+            <div class="search md:p-3 md:ps-10 md:w-60 p-2 ps-3 transition-transform duration-300 hover:scale-110">
+                <input type="search" id="search-navbar-laptop" class="p-2 ps-3 w-full text-sm text-gray-900 border border-blue-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 " placeholder="Cherch ...">
+            </div>
+        </ul>
+        
+
+        <div class="open text-bold flex flex-col bg-blue-300/50 w-full hidden md:hidden">
+            <button onclick="CloseNav()" class="absolute top-2 right-2 p-3 transition-transform duration-300 hover:scale-110">
+            <i class="fa-solid fa-xmark text-3xl text-red-600"></i>
+            </button>
+            <ul class="flex flex-col">
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="/index.html">Home
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/medecine.html">Médecine
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/rendez-vous.html">Rendez-vous
+                </a></li>
+                <li class="p-4 text-center hover:bg-blue-300 hover:text-shadow-cyan-700 transition-transform duration-300 hover:scale-110">
+                <a href="../pages/suivi-sante.html">Suivi-Santé
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+       <div class="flex flex-wrap justify-evenly bg-blue-300 items-center w-full h">
+        <button id="night-night" class="p-2 text-2xl text-yellow-400 hover:scale-110 transition">
+            <i id="theme-icon" class="fa-solid fa-sun"></i>
+        </button>
+
+    </div>
+        <main class="bg-center bg-no-repeat bg-[url('../images/Rendez-vous.png')] bg-cover bg-blue-950/55 bg-blend-multiply flex flex-col items-center justify-evenly p-2">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">🗓️ Avant le rendez-vous</h1>
+            <div class="flex flex-row gap-6 flex-wrap w-full">
+
+                <div class="px-4 text-center mx-auto py-24 lg:py-56">
+                    <p class="mb-8 text-lg font-normal text-blue-100 lg:text-2xl sm:px-20 lg:px-55">Prépare tes informations</p>
+                    <p class="mb-8 text-lg font-normal text-blue-100 lg:text-2xl sm:px-20 lg:px-55">Arrive à l’heure</p>
+                    <p class="mb-8 text-lg font-normal text-blue-100 lg:text-2xl sm:px-20 lg:px-55">Prépare tes questions</p>
+                    <p class="mb-8 text-lg font-normal text-blue-100 lg:text-2xl sm:px-20 lg:px-55">Montre tes documents</p>
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                        <a href="#rendu" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                            Cliquez ici
+                            <i class="fa-solid fa-right-to-line w-3.5 h-3.5 ms-2 rtl:rotate-180"></i>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="flex items-center mx-auto justify-center py-16">
+                    <form class="max-w-md mx-auto h-80 bg-blue-300 border rounded-2xl border-blue-950 p-5 pt-6" id="Rendez-vous-form" onsubmit="return handleFormSubmit(event)">
+                        <div id="rendu" class="grid md:grid-cols-2 md:gap-6">
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="text" name="Nom" id="Nom" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" Nom:"/>
+                                <label for="Nom" aria-label="Nom" class="peer-focus:font-medium text-sm text-red-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
+                            </div>
+                            
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="text" name="Prenom" id="Prenom" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" Prenom:"/>
+                                <label for="Prenom" aria-label="Prenom" class="peer-focus:font-medium text-sm text-red-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
+                            </div>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" Email address:" />
+                            <label for="floating_email" aria-label="email" class="peer-focus:font-medium text-sm text-red-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
+                        </div>
+                    
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="datetime-local" name="date" id="date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" Mode pass:" />
+                                <label for="date" aria-label="" class="peer-focus:font-medium text-sm text-red-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
+                            </div>
+                            <div class="relative z-0 w-full mb-5 group">
+                                <select name="medecin" id="medecin" class="block py-2.5 px-0 w-full font-medium text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" choisi médecin:">
+                                    <option value="Alilo" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Said Alilo</option>
+                                    <option value="Younssi" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Amal Alami Younssi</option>
+                                    <option value="Bizgarn" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr El Hassan Bizgarn</option>
+                                    <option value="Dressi" class="bg-blue-500/10 text-blue-800 hover:text-xl hover:transition-all duration-500 hover:bg-blue-400">Dr Amale Dressi</option>
+                                </select>
+                                <label for="medecin" aria-label="medecins" class="peer-focus:font-medium text-sm text-red-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Recirvez</button>
+                        <div id="greenMsg" class="hidden mt-4 p-3 bg-green-100 text-green-800 rounded-lg">
+                        ✅ Votre rendez-vous a été enregistré avec succès !
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    
+
+    <footer class="bg-blue-950/80 shadow-sm w-full">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-blue-200 sm:text-center">© 2023 <a href="https://github.com/OUTERGA-MOUSTAFA" class="hover:underline">Medicare+</a>. touts les drois recervé.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-blue-500 sm:mt-0">
+            <li>
+                <a href="../index.html" class="hover:underline me-4 md:me-6">Accueil</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Drois privé</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline me-4 md:me-6">Liciences</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/moustafa-outerga-ba6384224/" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+    <script src="../assets/js.js"></script>
+</body>
+</html>
